@@ -1,0 +1,22 @@
+<div>
+  <h1 style="text-align: center;color:red">SEARCH EMPLOYEE BY ID</h1>
+</div>
+
+<form (ngSubmit)="searchEmployeeById()">
+  <div class="form-inline col-md-2 offset-md-3">
+    <label for="empId">Employee ID:</label>
+    <input type="text" id="empId" name="empId" [(ngModel)]="empId" required>
+    <button class="btn btn-success" type="submit">Search</button>  
+  </div>
+</form>
+<div *ngIf="employee" class="col-md-2 offset-md-3">
+  <p>Employee Name: {{ employee.empName }}</p>
+  <p>Employee Department: {{ employee.empDept }}</p>
+  <p>Employee Designation: {{ employee.empDes }}</p>
+  <p>Employee Salary: {{ employee.empSal}}</p>
+</div>
+
+
+
+
+  

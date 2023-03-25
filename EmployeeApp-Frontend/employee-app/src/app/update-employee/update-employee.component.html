@@ -1,0 +1,39 @@
+
+<div>
+    <h1 style="text-align: center;color:red">UPDATE EMPLOYEES</h1>
+  </div>
+
+
+<div class="col-md-6 offset-md-3">
+    
+        <form (ngSubmit)="onSubmit()">
+            
+
+            <div class="form-group">
+                <label>Emp_Id</label>
+                <input type="text" class="form-control" id="emp_id"
+               [(ngModel)]="employee.empId" name="empId">
+            </div>
+            <div class="form-group">
+                <label>Emp_Name</label>
+                <input type="text" class="form-control" id="emp_name"
+               [(ngModel)]="employee.empName" name="empName">
+            </div>
+            <div class="form-group">
+                <label>Emp_Department</label>
+                <input type="text" class="form-control" id="Emp_Dept"
+               [(ngModel)]="employee.empDept" name="Emp_Dept">
+            </div>
+            <div class="form-group">
+                <label>Emp_Designation</label>
+                <input type="text" class="form-control" id="emp_des"
+               [(ngModel)]="employee.empDes" name="empDes">
+            </div>
+            <div class="form-group">
+                <label>Emp_Salary</label>
+                <input type="text" class="form-control" id="emp_Sal"
+               [(ngModel)]="employee.empSal" name="empSal">
+            </div>
+            <button class="btn btn-success" type="submit">Submit</button>
+        </form>
+    </div>

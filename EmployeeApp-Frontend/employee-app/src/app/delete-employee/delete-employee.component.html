@@ -1,0 +1,30 @@
+
+<div>
+    <h1 style="text-align: center;color:red">DELETE EMPLOYEES</h1>
+  </div>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Employee_Id</th>
+            <th>Employee_Name</th>
+            <th>Employee_Department</th>
+            <th>Employee_Designation</th>
+            <th>Employee_salary</th>
+            <th>Tools</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let employee of employees">
+            <td>{{employee.empId}}</td>
+            <td>{{employee.empName}}</td>
+            <td>{{employee.empDept}}</td>
+            <td>{{employee.empDes}}</td>
+            <td>{{employee.empSal}}</td>
+            <td>
+                <button (click)="deleteEmployeeById(employee.empId)" class="btn btn-danger" style="margin-left:10px;">Delete</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
